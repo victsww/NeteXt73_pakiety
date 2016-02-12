@@ -11,7 +11,7 @@ Vcs-Git: https://github.com/NetBit73/NeteXt73.git
 
 Package: netext73-pakiety
 Architecture: amd64
-Depends: ${shlibs:Depends}, ${misc:Depends} 
+Depends: ${misc:Depends} 
 Replaces: netext73-pakiety
 Description: NeteXt'73 - pakiety
   NeteXt'73 - pakiety dodatkowe.
