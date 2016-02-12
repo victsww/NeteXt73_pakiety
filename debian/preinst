@@ -1,3 +1,3 @@
 #!/bin/bash
-rm -rf /opt/NeteXt73_pakiety/*
+rm -rf /opt/NeteXt73-pakiety/*
 exit 0
