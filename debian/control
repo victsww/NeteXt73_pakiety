@@ -1,0 +1,17 @@
+Source: netext73-pakiety
+Section: contrib/admin
+Priority: extra
+Maintainer: NetBit73 <netbit73@gmail.com>
+Uploaders: NetBit73 <netbit73@gmail.com>
+Homepage: http://www.netext73.pl
+Build-Depends: 
+Standards-Version: 3.9.5
+Vcs-Browser: https://github.com/NetBit73/NeteXt73
+Vcs-Git: https://github.com/NetBit73/NeteXt73.git
+
+Package: netext73-pakiety
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends},
+Replaces: netext73-pakiety
+Description: NeteXt'73 - pakiety
+  NeteXt'73 - pakiety dodatkowe.
