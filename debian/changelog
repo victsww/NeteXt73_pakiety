@@ -1,9 +1,3 @@
-netext73-pakiety (--package) stable; urgency=medium
-
-  * netext73-pakiety
-
- -- NetBit73 <netbit73@gmail.com>  Fri, 12 Feb 2016 14:37:52 +0100
-
 netext73-pakiety (0.0.02) stable; urgency=medium
 
   * poprawka zależności
