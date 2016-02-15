@@ -1,3 +1,9 @@
+netext73-pakiety (0.0.06) trusty; urgency=medium
+
+  * iucode-tool 1.5.1
+
+ -- NetBit73 <netbit73@gmail.com>  Mon, 15 Feb 2016 10:19:05 +0100
+
 netext73-pakiety (0.0.05) trusty; urgency=medium
 
   * zmiana linkowania błednych katalogów

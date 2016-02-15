@@ -9,6 +9,6 @@ if [ "$1" = "2" ]; then
 else
 	#LATEST_VERSION=`grep 'v[0-9]' ./changelog | head -n 1 | cut -d 'v' -f 2`
 	PKG_NAME="netext73-pakiety"
-	dch --controlmaint --distribution trusty -v wersja --package netext73-pakiety
+	dch --controlmaint --distribution trusty -v 0.0. --package netext73-pakiety
 fi
 
