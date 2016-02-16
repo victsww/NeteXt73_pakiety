@@ -1,3 +1,9 @@
+netext73-pakiety (0.0.07) trusty; urgency=medium
+
+  * wymuszanie nadpisywania gcc i binutils
+
+ -- NetBit73 <netbit73@gmail.com>  Tue, 16 Feb 2016 10:13:05 +0100
+ 
 netext73-pakiety (0.0.06) trusty; urgency=medium
 
   * iucode-tool 1.5.1
