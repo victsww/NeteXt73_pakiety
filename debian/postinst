@@ -22,4 +22,6 @@ wersja_binutils=$(ls /opt/NeteXt73-pakiety/pakiety/ | grep binutils | cut -d "-"
 	rm -rf /usr/lib/x86_64-linux-gnu/libisl.so.10
 	ln -sf /usr/lib/x86_64-linux-gnu/libisl.so.13 /usr/lib/x86_64-linux-gnu/libisl.so.10
 #fi
+#firmware
+cp -f /opt/NeteXt73-pakiety/iwlwifi/*.ucode /lib/firmware/
 exit 0
