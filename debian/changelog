@@ -1,3 +1,9 @@
+netext73-pakiety (0.0.12) trusty; urgency=medium
+
+  * gcc 5.3.1
+
+ -- NetBit73 <netbit73@gmail.com>  Mon, 25 Mar 2016 13:55:05 +0100
+ 
 netext73-pakiety (0.0.11) trusty; urgency=medium
 
   * linux-firmware 1.157
