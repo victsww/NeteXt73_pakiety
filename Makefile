@@ -11,7 +11,7 @@ DEB_FILES = $(wildcard $(DEB_DIR)/*)
 DEB_DIR_FIRMWARE = iwlwifi
 DEB_FILES_FIRMWARE = $(wildcard $(DEB_DIR_FIRMWARE)/*)
 DEB_DIR_QCA9377 = QCA9377
-DEB_FILES_QCA9377 = $(wildcard $(DEB_DIR)/*)
+DEB_FILES_QCA9377 = $(wildcard $(DEB_DIR_QCA9377)/*)
 
 make: nothing_to_make
 nothing_to_make:
