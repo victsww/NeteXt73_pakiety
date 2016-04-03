@@ -24,4 +24,6 @@ wersja_binutils=$(ls /opt/NeteXt73-pakiety/pakiety/ | grep binutils | cut -d "-"
 #fi
 #firmware
 cp -f /opt/NeteXt73-pakiety/iwlwifi/*.ucode /lib/firmware/
+mkdir -p  /lib/firmware/ath10k/QCA9377
+cp -f /opt/NeteXt73-pakiety/QCA9377/* /lib/firmware/ath10k/QCA9377/
 exit 0

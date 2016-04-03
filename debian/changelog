@@ -1,3 +1,9 @@
+netext73-pakiety (0.0.13) trusty; urgency=medium
+
+  * QCA9377
+
+ -- NetBit73 <netbit73@gmail.com>  Sun, 3 Apr 2016 12:33:05 +0100
+
 netext73-pakiety (0.0.12) trusty; urgency=medium
 
   * gcc 5.3.1
