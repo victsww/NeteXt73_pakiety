@@ -1,3 +1,9 @@
+netext73-pakiety (0.0.16) trusty; urgency=medium
+
+  * gcc 6.0.1 z 24.04.16
+
+ -- NetBit73 <netbit73@gmail.com>  Mon, 25 Apr 2016 10:18:05 +0100
+
 netext73-pakiety (0.0.15) trusty; urgency=medium
 
   * gcc 6.0.1
