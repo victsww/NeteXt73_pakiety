@@ -1,3 +1,9 @@
+Netext73-pakiety (0.0.23) xenial; urgency=medium
+
+  * nowa kompilacja gcc
+
+ -- NetBit73 <netbit73@gmail.com>  Fri, 1 Jul 2016 19:28:05 +0100
+
 netext73-pakiety (0.0.22) xenial; urgency=medium
 
   * intel-microcode_3.20160607.1
