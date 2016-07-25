@@ -1,5 +1,11 @@
 Netext73-pakiety (0.0.25) xenial; urgency=medium
 
+  * gcc 6.1.1 nowe wydanie
+
+ -- NetBit73 <netbit73@gmail.com>  Fri, 25 Jul 2016 20:38:05 +0100
+
+Netext73-pakiety (0.0.25) xenial; urgency=medium
+
   * linux-firmware 1.159
 
  -- NetBit73 <netbit73@gmail.com>  Fri, 22 Jul 2016 22:48:05 +0100
