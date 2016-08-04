@@ -1,3 +1,9 @@
+Netext73-pakiety (0.0.27) xenial; urgency=medium
+
+  * binutils 2.27
+
+ -- NetBit73 <netbit73@gmail.com>  Thu, 4 JAug 2016 08:38:05 +0100
+
 Netext73-pakiety (0.0.26) xenial; urgency=medium
 
   * gcc 6.1.1 nowe wydanie
