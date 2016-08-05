@@ -1,8 +1,14 @@
+Netext73-pakiety (0.0.28) xenial; urgency=medium
+
+  * gcc 6.1.1
+
+ -- NetBit73 <netbit73@gmail.com>  Fri, 5 Aug 2016 19:00:01 +0100
+ 
 Netext73-pakiety (0.0.27) xenial; urgency=medium
 
   * binutils 2.27
 
- -- NetBit73 <netbit73@gmail.com>  Thu, 4 JAug 2016 08:38:05 +0100
+ -- NetBit73 <netbit73@gmail.com>  Thu, 4 Aug 2016 08:38:05 +0100
 
 Netext73-pakiety (0.0.26) xenial; urgency=medium
 
