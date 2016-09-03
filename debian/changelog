@@ -1,3 +1,9 @@
+Netext73-pakiety (0.0.33) xenial; urgency=medium
+
+  * binutils 2.27
+
+ -- NetBit73 <netbit73@gmail.com>  Sat, 3 Sep 2016 14:45:01 +0100
+
 Netext73-pakiety (0.0.32) xenial; urgency=medium
 
   * firmware 1.160
