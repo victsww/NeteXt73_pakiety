@@ -1,3 +1,9 @@
+Netext73-pakiety (0.0.39) xenial; urgency=medium
+
+  * linux-firmware 1.161
+
+ -- NetBit73 <netbit73@gmail.com>  Mon, 17 Oct 2016 21:41:01 +0100
+
 Netext73-pakiety (0.0.38) xenial; urgency=medium
 
   * amd64-microcode
