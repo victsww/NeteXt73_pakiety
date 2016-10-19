@@ -1,3 +1,9 @@
+Netext73-pakiety (0.1.02) xenial; urgency=medium
+
+  * libisl15
+
+ -- NetBit73 <netbit73@gmail.com>  Wed, 19 Oct 2016 15:21:01 +0100
+ 
 Netext73-pakiety (0.1.01) xenial; urgency=medium
 
   * czyszczenie paczki
