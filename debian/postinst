@@ -1,30 +1,25 @@
 #!/bin/bash
-#instalacja gcc
 
-twoj_gcc=$(gcc --version | head -n 1 | awk '{print $3}')
 dostepny_gcc=$(ls /opt/NeteXt73-pakiety/pakiety/ | grep gcc | cut -d "-" -f 2 | sed 's/.tar.xz//g')
 wersja_binutils=$(ls /opt/NeteXt73-pakiety/pakiety/ | grep binutils | cut -d "-" -f 2 | sed 's/.tar.xz//g')
-#if [ "$(ls /opt/ | grep "binutils-$wersja_binutils")" = "" ]; then
+#binutils
 	tar -Jxf /opt/NeteXt73-pakiety/pakiety/$(ls /opt/NeteXt73-pakiety/pakiety | grep binutils) -C /opt/
 	ln -sf /opt/binutils-$wersja_binutils/bin/ld /usr/bin/ld
 	ln -sf /opt/binutils-$wersja_binutils/bin/ld /usr/bin/ld-plugin
 	ln -sf /opt/binutils-$wersja_binutils/bin/ld.bfd /usr/bin/ld.bfd
-#fi
-#if [ "$twoj_gcc" != "$dostepny_gcc" ];then
+#gcc
 	tar -Jxf /opt/NeteXt73-pakiety/pakiety/$(ls /opt/NeteXt73-pakiety/pakiety | grep gcc) -C /opt/
 	ln -sf /opt/gcc-$dostepny_gcc/bin/gcc /usr/bin/gcc
 	ln -sf /opt/gcc-$dostepny_gcc/bin/gcc-ar /usr/bin/gcc-ar
 	ln -sf /opt/gcc-$dostepny_gcc/bin/cpp /usr/bin/cpp
 	ln -sf /opt/gcc-$dostepny_gcc/bin/g++ /usr/bin/g++
 	ln -sf /opt/gcc-$dostepny_gcc/bin/c++ /usr/bin/c++
-
 	ldconfig
 	rm -rf /usr/lib/x86_64-linux-gnu/libisl.so.10
 	ln -sf /usr/lib/x86_64-linux-gnu/libisl.so.13 /usr/lib/x86_64-linux-gnu/libisl.so.10
-#fi
 #firmware
-cp -f /opt/NeteXt73-pakiety/iwlwifi/*.ucode /lib/firmware/
-mkdir -p /lib/firmware/ath10k/QCA9377/hw1.0
-rm -f /lib/firmware/ath10k/QCA9377/hw1.0/*
-cp -f /opt/NeteXt73-pakiety/QCA9377/* /lib/firmware/ath10k/QCA9377/hw1.0/
+	cp -f /opt/NeteXt73-pakiety/iwlwifi/*.ucode /lib/firmware/
+	mkdir -p /lib/firmware/ath10k/QCA9377/hw1.0
+	rm -f /lib/firmware/ath10k/QCA9377/hw1.0/*
+	cp -f /opt/NeteXt73-pakiety/QCA9377/* /lib/firmware/ath10k/QCA9377/hw1.0/
 exit 0
