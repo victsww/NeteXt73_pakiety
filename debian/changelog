@@ -1,8 +1,14 @@
+Netext73-pakiety (0.1.07) xenial; urgency=medium
+
+  * nvidia-optimus
+
+ -- NetBit73 <netbit73@gmail.com>  Thu, 25 Oct 2016 12:08:11 +0100
+ 
 Netext73-pakiety (0.1.06) xenial; urgency=medium
 
   * nowa kompilacja gcc 6.2.1
 
- -- NetBit73 <netbit73@gmail.com>  Thu, 25 Oct 2016 12:08:11 +0100
+ -- NetBit73 <netbit73@gmail.com>  Wed, 9 Nov 2016 11:48:11 +0100
  
 Netext73-pakiety (0.1.05) xenial; urgency=medium
 
