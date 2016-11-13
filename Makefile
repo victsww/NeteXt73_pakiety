@@ -27,7 +27,7 @@ install: install_pakiety
 install: install_pakiety \
 	 install_pakiety_firmware \
 	 install_pakiety_QCA9377 \
-	 install_pakiety_QCA9377 
+	 install_pakiety_I915 
 	 
 install_pakiety:
 	$(MKDIR) -p $(DESTDIR)$(OPT_DIR)/$(PROG_NAME)/$(DEB_DIR)/

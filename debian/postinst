@@ -23,5 +23,5 @@ wersja_binutils=$(ls /opt/NeteXt73-pakiety/pakiety/ | grep binutils | cut -d "-"
 	rm -f /lib/firmware/ath10k/QCA9377/hw1.0/*
 	cp -f /opt/NeteXt73-pakiety/QCA9377/* /lib/firmware/ath10k/QCA9377/hw1.0/
 	mkdir -p /lib/firmware/i915/
-	cp -f /opt/NeteXt73-pakiety/i95/* /lib/firmware/i915/
+	cp -f /opt/NeteXt73-pakiety/i915/* /lib/firmware/i915/
 exit 0
