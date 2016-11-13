@@ -12,6 +12,8 @@ DEB_DIR_FIRMWARE = iwlwifi
 DEB_FILES_FIRMWARE = $(wildcard $(DEB_DIR_FIRMWARE)/*)
 DEB_DIR_QCA9377 = QCA9377
 DEB_FILES_QCA9377 = $(wildcard $(DEB_DIR_QCA9377)/*)
+DEB_DIR_I915 = i915
+DEB_FILES_I915 = $(wildcard $(DEB_DIR_I915)/*)
 
 make: nothing_to_make
 nothing_to_make:
@@ -24,7 +26,8 @@ install: install_pakiety
 
 install: install_pakiety \
 	 install_pakiety_firmware \
-	 install_pakiety_QCA9377
+	 install_pakiety_QCA9377 \
+	 install_pakiety_QCA9377 
 	 
 install_pakiety:
 	$(MKDIR) -p $(DESTDIR)$(OPT_DIR)/$(PROG_NAME)/$(DEB_DIR)/
@@ -35,3 +38,7 @@ install_pakiety_firmware:
 install_pakiety_QCA9377:
 	$(MKDIR) -p $(DESTDIR)$(OPT_DIR)/$(PROG_NAME)/$(DEB_DIR_QCA9377)/
 	$(INSTALL) 0755 $(DEB_FILES_QCA9377) $(DESTDIR)$(OPT_DIR)/$(PROG_NAME)/$(DEB_DIR_QCA9377)
+install_pakiety_I915:
+	$(MKDIR) -p $(DESTDIR)$(OPT_DIR)/$(PROG_NAME)/$(DEB_DIR_I915)/
+	$(INSTALL) 0755 $(DEB_FILES_I915) $(DESTDIR)$(OPT_DIR)/$(PROG_NAME)/$(DEB_DIR_I915)
+	
