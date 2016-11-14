@@ -1,30 +1,36 @@
 #!/bin/bash
-
-dostepny_gcc=$(ls /opt/NeteXt73-pakiety/pakiety/ | grep gcc | cut -d "-" -f 2 | sed 's/.tar.xz//g')
-wersja_binutils=$(ls /opt/NeteXt73-pakiety/pakiety/ | grep binutils | cut -d "-" -f 2 | sed 's/.tar.xz//g')
+	mkdir -p /tmp/netext73
+	cd /tmp/netext73
+	source /opt/NeteXt73/procedury
+	naglowek > instaluj.sh
+	instaluj_gcc instaluj_nowy >> instaluj.sh
+	bash instaluj.sh
+	rm -f /tmp/netext73/*
+#dostepny_gcc=$(ls /opt/NeteXt73-pakiety/pakiety/ | grep gcc | cut -d "-" -f 2 | sed 's/.tar.xz//g')
+#wersja_binutils=$(ls /opt/NeteXt73-pakiety/pakiety/ | grep binutils | cut -d "-" -f 2 | sed 's/.tar.xz//g')
 #binutils
-	tar -Jxf /opt/NeteXt73-pakiety/pakiety/$(ls /opt/NeteXt73-pakiety/pakiety | grep binutils) -C /opt/
-	ln -sf /opt/binutils-$wersja_binutils/bin/ld /usr/bin/ld
-	ln -sf /opt/binutils-$wersja_binutils/bin/ld /usr/bin/ld-plugin
-	ln -sf /opt/binutils-$wersja_binutils/bin/ld.bfd /usr/bin/ld.bfd
+#	tar -Jxf /opt/NeteXt73-pakiety/pakiety/$(ls /opt/NeteXt73-pakiety/pakiety | grep binutils) -C /opt/
+#	ln -sf /opt/binutils-$wersja_binutils/bin/ld /usr/bin/ld
+#	ln -sf /opt/binutils-$wersja_binutils/bin/ld /usr/bin/ld-plugin
+#	ln -sf /opt/binutils-$wersja_binutils/bin/ld.bfd /usr/bin/ld.bfd
 #gcc
-	tar -Jxf /opt/NeteXt73-pakiety/pakiety/$(ls /opt/NeteXt73-pakiety/pakiety | grep gcc) -C /opt/
-	ln -sf /opt/gcc-$dostepny_gcc/bin/gcc /usr/bin/gcc
-	ln -sf /opt/gcc-$dostepny_gcc/bin/gcc-ar /usr/bin/gcc-ar
-	ln -sf /opt/gcc-$dostepny_gcc/bin/cpp /usr/bin/cpp
-	ln -sf /opt/gcc-$dostepny_gcc/bin/g++ /usr/bin/g++
-	ln -sf /opt/gcc-$dostepny_gcc/bin/c++ /usr/bin/c++
+#	tar -Jxf /opt/NeteXt73-pakiety/pakiety/$(ls /opt/NeteXt73-pakiety/pakiety | grep gcc) -C /opt/
+#	ln -sf /opt/gcc-$dostepny_gcc/bin/gcc /usr/bin/gcc
+#	ln -sf /opt/gcc-$dostepny_gcc/bin/gcc-ar /usr/bin/gcc-ar
+#	ln -sf /opt/gcc-$dostepny_gcc/bin/cpp /usr/bin/cpp
+#	ln -sf /opt/gcc-$dostepny_gcc/bin/g++ /usr/bin/g++
+#	ln -sf /opt/gcc-$dostepny_gcc/bin/c++ /usr/bin/c++
 	#dodatkowe linkowanie
-	wspierane_wersje="xenial|yakkety"
-	wspierane_nr="16.04|16.10"
-	WERSJA_UBUNTU="$(lsb_release -cs)"
-	if [ "$(lsb_release -a | grep -E "$wspierane_nr")" != "" ] || [ "$(echo $WERSJA_UBUNTU | grep -i -x -E "$wspierane_wersje")" != "" ]; then
-		rm -rf /usr/lib/libgsl.so.0
-		ln -sf /usr/lib/x86_64-linux-gnu/libgsl.so.19.0.0 /usr/lib/libgsl.so.0
-	fi
-	ldconfig
-	rm -rf /usr/lib/x86_64-linux-gnu/libisl.so.10
-	ln -sf /usr/lib/x86_64-linux-gnu/libisl.so.13 /usr/lib/x86_64-linux-gnu/libisl.so.10
+#	wspierane_wersje="xenial|yakkety"
+#	wspierane_nr="16.04|16.10"
+#	WERSJA_UBUNTU="$(lsb_release -cs)"
+#	if [ "$(lsb_release -a | grep -E "$wspierane_nr")" != "" ] || [ "$(echo $WERSJA_UBUNTU | grep -i -x -E "$wspierane_wersje")" != "" ]; then
+#		rm -rf /usr/lib/libgsl.so.0
+#		ln -sf /usr/lib/x86_64-linux-gnu/libgsl.so.19.0.0 /usr/lib/libgsl.so.0
+#	fi
+#	ldconfig
+#	rm -rf /usr/lib/x86_64-linux-gnu/libisl.so.10
+#	ln -sf /usr/lib/x86_64-linux-gnu/libisl.so.13 /usr/lib/x86_64-linux-gnu/libisl.so.10
 #firmware
 	cp -f /opt/NeteXt73-pakiety/iwlwifi/*.ucode /lib/firmware/
 	mkdir -p /lib/firmware/ath10k/QCA9377/hw1.0
