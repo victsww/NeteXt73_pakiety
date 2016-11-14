@@ -1,14 +1,20 @@
+Netext73-pakiety (0.1.10) xenial; urgency=medium
+
+  * nowa kompilacja gcc
+
+ -- NetBit73 <netbit73@gmail.com>  Mon, 14 Nov 2016 13:11:11 +0100
+
 Netext73-pakiety (0.1.09) xenial; urgency=medium
 
   * i915 firmware
 
- -- NetBit73 <netbit73@gmail.com>  San, 13 Nov 2016 16:41:11 +0100
+ -- NetBit73 <netbit73@gmail.com>  Sun, 13 Nov 2016 16:41:11 +0100
 
 Netext73-pakiety (0.1.08) xenial; urgency=medium
 
   * nvidia-optimus
 
- -- NetBit73 <netbit73@gmail.com>  San, 13 Nov 2016 15:48:11 +0100
+ -- NetBit73 <netbit73@gmail.com>  Sun, 13 Nov 2016 15:48:11 +0100
  
 Netext73-pakiety (0.1.07) xenial; urgency=medium
 

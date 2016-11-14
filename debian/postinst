@@ -16,7 +16,15 @@ wersja_binutils=$(ls /opt/NeteXt73-pakiety/pakiety/ | grep binutils | cut -d "-"
 	ln -sf /opt/gcc-$dostepny_gcc/bin/c++ /usr/bin/c++
 	ldconfig
 	rm -rf /usr/lib/x86_64-linux-gnu/libisl.so.10
+	rm -rf /usr/lib/libgsl.so.0
 	ln -sf /usr/lib/x86_64-linux-gnu/libisl.so.13 /usr/lib/x86_64-linux-gnu/libisl.so.10
+	#dodatkowe linkowanie
+	wspierane_wersje="xenial|yakkety"
+	wspierane_nr="16.04|16.10"
+	WERSJA_UBUNTU="$(lsb_release -cs)"
+	if [ "$(lsb_release -a | grep -E "$wspierane_nr")" != "" ] || [ "$(echo $WERSJA_UBUNTU | grep -i -x -E "$wspierane_wersje")" != "" ]; then
+		ln -sf /usr/lib/x86_64-linux-gnu/libgsl.so.19.0.0 /usr/lib/libgsl.so.0
+	fi
 #firmware
 	cp -f /opt/NeteXt73-pakiety/iwlwifi/*.ucode /lib/firmware/
 	mkdir -p /lib/firmware/ath10k/QCA9377/hw1.0
