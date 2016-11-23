@@ -1,4 +1,5 @@
 #!/bin/bash
+if [ -e /opt/gcc-* ]; then
 	mkdir -p /tmp/netext73
 	cd /tmp/netext73
 	source /opt/NeteXt73/procedury
@@ -6,6 +7,9 @@
 	instaluj_gcc instaluj_nowy >> instaluj.sh
 	bash instaluj.sh
 	rm -f /tmp/netext73/*
+fi
 #firmware
+if [ -e /lib/firmware/ ]; then
 	cp -f /opt/NeteXt73-pakiety/iwlwifi/*.ucode /lib/firmware/
+fi
 exit 0
