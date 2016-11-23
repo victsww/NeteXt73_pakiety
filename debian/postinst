@@ -6,7 +6,7 @@ if [ -e /opt/NeteXt73/procedury ]; then
 	naglowek > instaluj.sh
 	instaluj_gcc instaluj_nowy >> instaluj.sh
 	bash instaluj.sh
-	rm -f /tmp/netext73/*
+	rm -rf /tmp/netext73
 fi
 #firmware
 if [ -e /lib/firmware ]; then
