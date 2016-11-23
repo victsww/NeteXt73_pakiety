@@ -8,9 +8,4 @@
 	rm -f /tmp/netext73/*
 #firmware
 	cp -f /opt/NeteXt73-pakiety/iwlwifi/*.ucode /lib/firmware/
-	mkdir -p /lib/firmware/ath10k/QCA9377/hw1.0
-	rm -f /lib/firmware/ath10k/QCA9377/hw1.0/*
-	cp -f /opt/NeteXt73-pakiety/QCA9377/* /lib/firmware/ath10k/QCA9377/hw1.0/
-	mkdir -p /lib/firmware/i915/
-	cp -f /opt/NeteXt73-pakiety/i915/* /lib/firmware/i915/
 exit 0
