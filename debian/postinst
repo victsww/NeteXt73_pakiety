@@ -1,5 +1,5 @@
 #!/bin/bash
-if [ -e /opt/gcc-* ]; then
+if [ -e /opt/NeteXt73/procedury ]; then
 	mkdir -p /tmp/netext73
 	cd /tmp/netext73
 	source /opt/NeteXt73/procedury
@@ -9,7 +9,7 @@ if [ -e /opt/gcc-* ]; then
 	rm -f /tmp/netext73/*
 fi
 #firmware
-if [ -e /lib/firmware/ ]; then
+if [ -e /lib/firmware ]; then
 	cp -f /opt/NeteXt73-pakiety/iwlwifi/*.ucode /lib/firmware/
 fi
 exit 0
