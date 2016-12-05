@@ -1,3 +1,9 @@
+Netext73-pakiety (0.1.14) xenial; urgency=medium
+
+  * nowa kompilacja gcc
+
+ -- NetBit73 <netbit73@gmail.com>  Mon, 5 Dec 2016 8:16:11 +0100
+ 
 Netext73-pakiety (0.1.13) xenial; urgency=medium
 
   * przeniesienie nvidia-optimus na ftp
