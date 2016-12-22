@@ -1,3 +1,9 @@
+Netext73-pakiety (0.1.16) xenial; urgency=medium
+
+  * gcc 6.3.0
+
+ -- NetBit73 <netbit73@gmail.com>  Thu, 22 Dec 2016 9:22:11 +0100
+ 
 Netext73-pakiety (0.1.15) xenial; urgency=medium
 
   * nowa kompilacja gcc
