@@ -6,8 +6,8 @@ Uploaders: NetBit73 <netbit73@gmail.com>
 Homepage: http://www.netext73.pl
 Build-Depends: debhelper (>= 9) 
 Standards-Version: 3.9.5
-Vcs-Browser: https://github.com/NetBit73/NeteXt73
-Vcs-Git: https://github.com/NetBit73/NeteXt73.git
+Vcs-Browser: https://github.com/NetBit73/NeteXt73_pakiety
+Vcs-Git: https://github.com/NetBit73/NeteXt73_pakiety.git
 
 Package: netext73-pakiety
 Architecture: amd64
