@@ -1,3 +1,9 @@
+netext73-pakiety (0.1.22) xenial; urgency=medium
+
+  * deinstalator gcc
+
+ -- NetBit73 <netbit73@gmail.com>  Mon, 3 Apr 2017 15:36:11 +0100
+
 netext73-pakiety (0.1.21) xenial; urgency=medium
 
   * nowa kompilacja gcc 6.3.1

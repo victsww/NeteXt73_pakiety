@@ -1,0 +1,11 @@
+#!/bin/bash
+wersja=$(dpkg -l | grep gcc- | grep -v base | grep -v libgcc | awk '{print $2}' | sed 's/gcc-//g')	
+sudo ln -sf /usr/bin/gcc-$wersja /usr/bin/gcc
+sudo ln -sf /usr/bin/gcc-ar-$wersja /usr/bin/gcc-ar
+sudo ln -sf /usr/bin/cpp-$wersja /usr/bin/cpp
+sudo ln -sf /usr/bin/g++-$wersja /usr/bin/g++
+sudo rm -f /usr/bin/c++
+sudo ln -sf /usr/bin/g++ /usr/bin/c++
+rm -rf /opt/NeteXt73-pakiety/*
+exit 0
+
