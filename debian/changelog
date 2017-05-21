@@ -1,3 +1,9 @@
+netext73-pakiety (0.1.26) xenial; urgency=medium
+
+  * nowa wersja gcc 7.1.1
+
+ -- NetBit73 <netbit73@gmail.com>  Sun, 21 May 2017 21:11:11 +0100
+
 netext73-pakiety (0.1.25) xenial; urgency=medium
 
   * nowa wersja gcc 7.1.0
