@@ -1,3 +1,9 @@
+netext73-pakiety (0.1.30) xenial; urgency=medium
+
+  * firmware
+
+ -- NetBit73 <netbit73@gmail.com>  Wed, 28 Jun 2017 8:31:11 +0100
+
 netext73-pakiety (0.1.29) xenial; urgency=medium
 
   * gcc 7.1.1
