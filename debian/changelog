@@ -1,3 +1,9 @@
+netext73-pakiety (0.1.32) xenial; urgency=medium
+
+  * gcc 7.1.1 nowa wersja - wycięcie gcc 6.3.1
+
+ -- NetBit73 <netbit73@gmail.com>  Wed, 06 Jul 2017 21:13:11 +0100
+
 netext73-pakiety (0.1.31) xenial; urgency=medium
 
   * gcc 7.1.1 nowa wersja
